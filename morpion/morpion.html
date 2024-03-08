@@ -8,7 +8,13 @@
     <script src="morpion.js"></script>
 </head>
 <body>
-    <div id="i1">
+
+    <div id="start">
+        <button id="button" onclick="startgame()">Start game</button>    
+    </div>
+
+
+    <div id="i1" class="hidden">
         <table border="2" id="gameBoard">
             <tr>
                 <td><img id="cell00" onclick="cliquer(0, 0)" src="https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg" width="100" height="100"></td>
@@ -26,6 +32,11 @@
                 <td><img id="cell22" onclick="cliquer(2, 2)" src="https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg" width="100" height="100"></td>
             </tr>
         </table>
+
+        <div id="result">
+            <p id="resulttext"></p>
+        </div>
+
     </div>
 
    
